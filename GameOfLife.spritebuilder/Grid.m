@@ -71,7 +71,7 @@ static const int GRID_COLUMNS = 10;
     //get the creature at that locaiton
     Creature *creature = [self creatureForTouchPosition:touchLocation];
     //invert its stat - kill it if its alive, biring it to life if its dead
-    creature.isAlive = !creature.isAlive;
+    creature.isAlive = YES;//!creature.isAlive;
 }
 
 - (Creature *)creatureForTouchPosition:(CGPoint)touchPosition
