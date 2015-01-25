@@ -91,7 +91,7 @@ static const int GRID_COLUMNS = 10;
     //update each creature stat
     [self updateCreatures];
     
-    //update the generation
+    //update the generation   when totalAlive==0, generation should stop
     _generation++;
 }
 
