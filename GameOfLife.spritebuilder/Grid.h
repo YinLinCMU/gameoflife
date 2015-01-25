@@ -11,7 +11,7 @@
 @interface Grid : CCSprite
 @property (nonatomic, assign) int totalAlive;
 @property (nonatomic, assign) int generation;
--(id)evolveStep;
--(id)countNeighbors;
--(id)updateCreatures;
+-(void)evolveStep;
+-(void)countNeighbors;
+-(void)updateCreatures;
 @end
