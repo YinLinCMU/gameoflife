@@ -143,15 +143,15 @@ static const int GRID_COLUMNS = 10;
             //access creature
             Creature *currentCreature = _gridArray[i][j];
             if (currentCreature.livingNeighbors == 3) {
-                
-                currentCreature.isAlive = TRUE;
-                numAlive += 1;
-                
+                currentCreature.isAlive = YES;
             }
             
             else if (currentCreature.livingNeighbors <= 1 || currentCreature.livingNeighbors >= 4){
                 
-                currentCreature.isAlive = FALSE;
+                currentCreature.isAlive = NO;
+            }
+            if (currentCreature.isAlive == YES) {
+                numAlive++;
             }
         }
     }
