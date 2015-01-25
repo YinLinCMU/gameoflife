@@ -92,7 +92,7 @@ static const int GRID_COLUMNS = 10;
     [self updateCreatures];
     
     //update the generation
-    //_generation++;
+    _generation++;
 }
 
 - (void) countNeighbors
@@ -156,6 +156,5 @@ static const int GRID_COLUMNS = 10;
         }
     }
     _totalAlive = numAlive;
-    _generation = numAlive;
 }
 @end
