@@ -64,8 +64,9 @@ static const int GRID_COLUMNS = 10;
         y += _cellHeight;
         }
     }
+-(void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
     
-- (void)touchBegan:(CCTouch *)touch withEvent:(CCTouchEvent *)event{
+{
     //get the x, y coordinates of the touch
      CGPoint touchLocation = [touch locationInNode:self];
     //get the creature at that locaiton
